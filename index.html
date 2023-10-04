@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My LWC App</title>
+    <script src="https://carlcarter-230908-demo.lightning.force.com/lightning/lightning.out.js"></script>
+</head>
+<body>
+    <div id="lwc-container"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize Lightning Out
+            $Lightning.use("c:myLightningOutApp", function() {
+                // Create the LWC
+                $Lightning.createComponent(
+                    "c:ccLWCOutExample",
+                    {},
+                    "lwc-container",
+                    function(cmp) {
+                        console.log("LWC was created successfully");
+                    }
+                );
+            }, 'https://carlcarter-230908-demo.lightning.force.com/');
+        });
+    </script>
+</body>
+</html>
