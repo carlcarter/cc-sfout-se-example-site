@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Motor Company</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #181818;
+            color: #f4f4f4;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .car-container {
+            border: 3px solid #FF5733;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .car-details {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .car-image {
+            flex: 1;
+        }
+        .car-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .finance-button {
+            background-color: #FF5733;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .finance-button:hover {
+            background-color: #FF803F;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to Fictional Motor Company</h1>
+
+<div class="car-container">
+    <div class="car-details">
+        <h2>Model X1</h2>
+        <p>Price: £500,000</p>
+        <p>Year: 2023</p>
+        <p>Color: Red</p>
+        <p>Features: Sunroof, Automatic Transmission, Leather Seats, etc.</p>
+        <button class="finance-button">Finance It</button>
+    </div>
+    <div class="car-image">
+        <img src="img/redcar.jpg" alt="Car Model X1">
+    </div>
+</div>
+
+</body>
+</html>
